@@ -1,0 +1,45 @@
+{
+    "version": "1.0.0",
+    "general": {
+        "autoRefresh": true,
+        "refreshInterval": 30,
+        "defaultDownloadLocation": "",
+        "confirmBeforeDelete": true,
+        "showFilePreview": true
+    },
+    "connections": [
+        {
+            "name": "Default S3",
+            "serviceType": "Amazon S3",
+            "endpoint": "https://s3.amazonaws.com",
+            "accessKey": "AKIAIOS",
+            "secretKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+            "region": "us-west-1",
+            "isDefault": true
+        },
+        {
+            "name": "MinIO Local",
+            "serviceType": "MinIO",
+            "endpoint": "http://localhost:9000",
+            "accessKey": "minioadmin",
+            "secretKey": "minioadmin",
+            "region": "",
+            "isDefault": false
+        }
+    ],
+    "appearance": {
+        "theme": "system",
+        "fontSize": 1,
+        "showHiddenFiles": false,
+        "showFileExtensions": true
+    },
+    "layout": {
+        "defaultView": "list",
+        "sortBy": "name",
+        "sortDirection": "asc"
+    },
+    "permissions": {
+        "allowAnonymousUsageStats": false,
+        "enableCaching": true
+    }
+}
